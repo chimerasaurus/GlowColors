@@ -2,24 +2,24 @@
 # Prefixes are the leading bit for communication
 prefixes:
     show: 0x90
-	system: 0x55
+    system: 0x55
 # Colors for setting ears to specific colors
 colors:
-	both:
-		inactive: 0x60
-		blue: 0x61
-		green: 0x62
-		cyan: 0x63
-		red: 0x64
-		magenta: 0x65
-		yellow: 0x66
-		white: 0x67
-	right:
-		inactive: 0x68
-		blue: 0x69
-		green: 0x6A
-		cyan: 0x6B
-		red: 0x6C
-		magenta: 0x6D
-		yellow: 0x6E
-		white: 0x6F
+    both:
+        inactive: 0x60
+        blue: 0x61
+        green: 0x62
+        cyan: 0x63
+        red: 0x64
+        magenta: 0x65
+        yellow: 0x66
+        white: 0x67
+    right:
+        inactive: 0x68
+        blue: 0x69
+        green: 0x6A
+        cyan: 0x6B
+        red: 0x6C
+        magenta: 0x6D
+        yellow: 0x6E
+        white: 0x6F
