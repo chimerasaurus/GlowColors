@@ -10,7 +10,7 @@ class TestChecksum(unittest.TestCase):
         self.values = {166: [0x90, 0x60], 231: [0x90, 0x6F]}
         
     def test_crc(self):
-        """Tests the crc function of the checksum module"""
+        """Testing the crc function of the checksum module"""
         for k,v in self.values.iteritems():
             crc_8 = glowcolors.checksum.crc(v)
             self.assertEqual(crc_8, k)

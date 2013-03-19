@@ -7,7 +7,6 @@ Credit to http://www.hifi-remote.com/forums/viewtopic.php?t=14541 for guidance i
 """
 
 # Module imports
-import unittest
 
 # Constants
 CRC_8_GENERATOR_POLYNOMIAL = 0x8C
