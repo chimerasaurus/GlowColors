@@ -1,4 +1,4 @@
-# Codes required to generate color-changing commands; based on data from http://www.hifi-remote.com/forums/viewtopic.php?t=14541
+# Codes for generating color-changing strings
 # Prefixes are the leading bit for communication
 prefixes:
     show: 0x90
