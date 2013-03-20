@@ -34,3 +34,7 @@ COLORS = {
         'WHITE': 0x6F,
     },
 }
+
+IR = {
+    'WIDTH': 417
+}
