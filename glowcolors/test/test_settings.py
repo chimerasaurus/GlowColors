@@ -9,6 +9,7 @@ class TestSettings(unittest.TestCase):
         """Sets up the unit tests"""
         self.prefixes = glowcolors.settings.PREFIXES
         self.colors = glowcolors.settings.COLORS
+        self.ir = glowcolors.settings.IR
         
     def test_prefix_count(self):
         """Testing the number of prefixes for GWtS messages"""
@@ -30,3 +31,8 @@ class TestSettings(unittest.TestCase):
     def test_right_color_set_complete(self):
         """Testing paired color set has eight elements"""
         self.assertEqual(len(self.colors['RIGHT']), 8)
+        
+    # Test the IR settings
+    def test_ir_padding_set(self):
+        """Testing ir padding is not null"""
+        self.assertTrue(self.ir['WIDTH'] > 0)
