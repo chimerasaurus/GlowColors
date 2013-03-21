@@ -9,7 +9,12 @@ class TestSettings(unittest.TestCase):
         """Sets up the unit tests"""
         self.unencoded_off_message_both_ears = [144,96,166]
         self.encoded_off_message_both_ears = [2085, -417, 834, -834, 2502, -834, 417, -417, 834, -834, 834, -417, 417, -834]
+        self.encoded_abs_off_message_both_ears = [2085, 417, 834, 834, 2502, 834, 417, 417, 834, 834, 834, 417, 417, 834]
         
-    def test_encode_both_ears_off_messahe(self):
+    def test_encode_both_ears_off_message(self):
         """Testing encode of off message for both ears"""
         self.assertEqual(glowcolors.encode.ir_encode(self.unencoded_off_message_both_ears), self.encoded_off_message_both_ears)
+
+    def test_encode_both_ears_off_abs_message(self):
+        """Testing encode of off message for both ears with absolute value return"""
+        self.assertEqual(glowcolors.encode.ir_encode(self.unencoded_off_message_both_ears, True), self.encoded_abs_off_message_both_ears)

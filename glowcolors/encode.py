@@ -10,8 +10,8 @@ import settings
 # Constants
 MESSAGE_BIT_WIDTH = settings.IR['WIDTH']
 
-def ir_encode(message):
-    """Encodes the given messahe in the IR protocol for transmission."""
+def ir_encode(message, absolute_values=False):
+    """Encodes the given message in the IR protocol for transmission; optional boolean to return absolute timings"""
     # Variable to hold the encoded message
     encoded_message = []
     
@@ -52,4 +52,8 @@ def ir_encode(message):
     encoded_message.append(true_time)
             
     # Return the encoded message
-    return encoded_message
+    if (absolute_values == True):
+        abs_values = [abs(encoded_message[n]) for n in range(0,len(encoded_message))]
+        return abs_values
+    else:
+        return encoded_message
