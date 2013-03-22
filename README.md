@@ -24,6 +24,9 @@ The data returned (`message_data`) from the message module is an array of values
 
 The data rerurned (`ir_data`) from encode will be an array of IR times in microseconds. The widths correspond to IR pulses sent to the headwear to change its state.
 
+###Generating C arrays###
+The included script `generate_c_arrays.py` generates C arrays for use in C programs, such as Arduino sketches. 
+
 ##Credits##
 This work is based on contributions from users in the following forum threads.
 

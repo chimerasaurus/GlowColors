@@ -36,5 +36,5 @@ COLORS = {
 }
 
 IR = {
-    'WIDTH': 417
+    'WIDTH': 0x1A1
 }
