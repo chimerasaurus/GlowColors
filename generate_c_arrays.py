@@ -33,9 +33,9 @@ def generate_color_arrays(side):
     encoded_data = []
     
     for color in glowcolors.settings.COLORS[side]:
-        message = glowcolors.message.generate(color)
+        message = glowcolors.message.generate(color, ear=side)
         encoded_data = glowcolors.encode.ir_encode(message, True)
-        print "int %s_%s[%s] = %s" % (side, color, len(encoded_data), array_to_string(encoded_data))
+        print "unsigned int %s_%s[%s] = %s" % (side, color, len(encoded_data), array_to_string(encoded_data))
     
 # Helpers
 ## Run the main() function on execution
