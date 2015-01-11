@@ -34,4 +34,4 @@ This work is based on contributions from users in the following forum threads.
 * [Do It Yourself Christmas](http://doityourselfchristmas.com/forums/showthread.php?20818-Ear-to-Ear-Networking)
 
 ##Legal information##
-All original work, intellectual property, and copyrights are property of their respective holders.
+This project is provided educational purposes only. Please see the `LICENSE` file for licensing details.
